@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hangman.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="game-info">
+            <h1>Hangman</h1>
+            <span>Word From : <span class="from"></span> </span>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="hangman">
+                <div class="stand">
+                    <div class="first-pile element d-none"></div>
+                    <div class="second-pile element d-none"></div>
+                    <div class="cord element d-none"></div>
+                </div>
+                <div class="man">
+                    <div class="legs element d-none"></div>
+                    <div class="body element d-none"></div>
+                    <div class="hands element d-none"></div>
+                    <div class="head element d-none"></div>
+                </div>
+            </div>
+            <div class="letters-list">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="help">
+                Index : <span></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="letters">
+
+            </div>
+        </div>
+    </div>
+    <div class="loser d-none">
+        You Lose
+        <span>Play Again</span>
+    </div>
+    <div class="winner d-none ">
+        You Win
+        <span>Play Again</span>
+    </div>
+    <audio src="audio/game-over-160612.mp3" class="game-over"></audio>
+    <audio src="audio/short-success-sound-glockenspiel-treasure-video-game-6346.mp3" class="correct"></audio>
+    <audio src="audio/ochoochogift-winner-laugh-154997.mp3" class="you-win"></audio>
+    <audio src="audio/training-program-incorrect1-88736.mp3" class="wrong"></audio>
+    <script src="hangman.js"></script>
+</body>
+
+</html>
